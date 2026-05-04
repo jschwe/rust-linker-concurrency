@@ -1,0 +1,9 @@
+[package]
+name = "rust-linker-concurrency"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.89"
+description = "Linker wrapper that uses file locks to throttle link-step concurrency independently of cargo's --jobs."
+license = "MIT OR Apache-2.0"
+
+[dependencies]
