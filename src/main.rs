@@ -1,8 +1,8 @@
-//! A linker wrapper that throttles the link step with a file-locks to control concurrency. 
-//! 
+//! A linker wrapper that throttles the link step with a file-locks to control concurrency.
+//!
 //! The main purpose is to prevent Out-of-Memory kills due to linking consuming too much RAM.
 //! This only affects linking and is an addition to the `--jobs` option of cargo.
-//! 
+//!
 //! # Configuration
 //!
 //! All configuration is via environment variables read on each invocation:
